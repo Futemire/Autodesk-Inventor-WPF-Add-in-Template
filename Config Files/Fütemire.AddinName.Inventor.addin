@@ -1,0 +1,14 @@
+﻿<Addin Type="Standard">
+  <ClassId>{$guid1$}</ClassId>
+  <ClientId>{$guid1$}</ClientId>
+  <DisplayName>Build Stock Number</DisplayName>
+  <Description>$addindescription$</Description>
+  <Assembly>C:\ProgramData\Autodesk\Inventor Addins\$companyname$\$safeprojectname$.dll</Assembly>
+  <LoadOnStartUp>1</LoadOnStartUp>
+  <UserUnloadable>0</UserUnloadable>
+  <Hidden>0</Hidden>
+  <SupportedSoftwareVersionGreaterThan>15..</SupportedSoftwareVersionGreaterThan>
+  <DataVersion>1</DataVersion>
+  <UserInterfaceVersion>1</UserInterfaceVersion>
+  <LoadBehavior>0</LoadBehavior>
+</Addin>

@@ -1,0 +1,83 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Autodesk Inventor WPF Add-in</Name>
+    <Description>Autodesk Inventor Add-in project template using Windows Presentation Foundation (WPF).</Description>
+    <ProjectType>VisualBasic</ProjectType>
+    <ProjectSubType>Autodesk</ProjectSubType>
+    <SortOrder>1</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Autodesk Inventor WPF Add-in</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>Fütemire.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="BuildStockNumber.vbproj" File="BuildStockNumber.vbproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
+      <Folder Name="Config Files" TargetFolderName="Config Files">
+        <ProjectItem ReplaceParameters="true" TargetFileName="$companyname$.$addinsafename$.Inventor.addin">Fütemire.AddinName.Inventor.addin</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="BuildStockNumber.manifest">BuildStockNumber.manifest</ProjectItem>
+      </Folder>
+      <Folder Name="Converters" TargetFolderName="Converters">
+        <ProjectItem ReplaceParameters="true" TargetFileName="EmptyControlVisibilityConverter.vb">EmptyControlVisibilityConverter.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="InventorValueConverter.vb">InventorValueConverter.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ReadoutPrecisionToCustomPropertyPrecision.vb">ReadoutPrecisionToCustomPropertyPrecision.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RelayCommand.vb">RelayCommand.vb</ProjectItem>
+      </Folder>
+      <Folder Name="Core Classes" TargetFolderName="Core Classes">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AddinBaseClass.vb">AddinBaseClass.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AddinConfigClass.vb">AddinConfigClass.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AdministrationClass.vb">AdministrationClass.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ControlDefBaseClass.vb">ControlDefBaseClass.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ErrorLogging.vb">ErrorLogging.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainWindowControlDef.vb">MainWindowControlDef.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ManagedParameter.vb">ManagedParameter.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StockTypeBaseClass.vb">StockTypeBaseClass.vb</ProjectItem>
+      </Folder>
+      <Folder Name="Extensions" TargetFolderName="Extensions">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyExtensions.vb">AssemblyExtensions.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ComboBoxExtensions.vb">ComboBoxExtensions.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EnumExtensions.vb">EnumExtensions.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FileSystemExtensions.vb">FileSystemExtensions.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="InventorAttributeSetExtensions.vb">InventorAttributeSetExtensions.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="InventorDocumentExtensions.vb">InventorDocumentExtensions.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MathExtensions.vb">MathExtensions.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UIElementExtensions.vb">UIElementExtensions.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="XMLExtensions.vb">XMLExtensions.vb</ProjectItem>
+      </Folder>
+      <Folder Name="Interfaces" TargetFolderName="Interfaces">
+        <ProjectItem ReplaceParameters="true" TargetFileName="FütemireAddin.vb">vstg0001.vb</ProjectItem>
+      </Folder>
+      <Folder Name="My Project" TargetFolderName="My Project">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.vb">AssemblyInfo.vb</ProjectItem>
+        <Folder Name="MyExtensions" TargetFolderName="MyExtensions">
+          <ProjectItem ReplaceParameters="true" TargetFileName="MyWpfExtension.vb">MyWpfExtension.vb</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.resx">Resources.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.Designer.vb">Resources.Designer.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.vb">Settings.Designer.vb</ProjectItem>
+      </Folder>
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BuildStockNumber.Config">BuildStockNumber.Config</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="CarbonFiber.png">CarbonFiber.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="function_32.png">function_32.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="pencil.png">pencil.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="StockTag.pdn">StockTag.pdn</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="StockTag.png">StockTag.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="StockTag16.png">StockTag16.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="tag--pencil.png">tag--pencil.png</ProjectItem>
+      </Folder>
+      <Folder Name="Styles" TargetFolderName="Styles">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Default Control Styles.xaml">Default Control Styles.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ModifiedDefaultControls.xaml">ModifiedDefaultControls.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WindowStyles.xaml">WindowStyles.xaml</ProjectItem>
+      </Folder>
+      <Folder Name="Windows" TargetFolderName="Windows">
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainWindow.xaml">MainWindow.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainWindow.xaml.vb">MainWindow.xaml.vb</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
