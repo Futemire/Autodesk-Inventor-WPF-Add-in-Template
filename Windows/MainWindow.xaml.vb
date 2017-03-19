@@ -48,7 +48,7 @@ Class MainWindow
     End Sub
 
     ''' <summary>
-    ''' Empty delegate so we can force a window update o the UI thread from other threads.
+    ''' Empty delegate so we can force a window update on the UI thread from other threads.
     ''' </summary>
     Public EmptyDelegate As Action = Sub()
                                      End Sub
